@@ -7,6 +7,7 @@ const pages = {
   'nav': [ Pages.NavigatePage ],
   'login': [ Pages.LoginPage ], 
   'registration': [ Pages.RegistrationPage ], 
+  '404Page' : [ Pages.ClientErrorPage ]
 };
 
 Object.entries(Components).forEach(([ name, component ]) => {
