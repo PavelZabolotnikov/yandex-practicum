@@ -7,6 +7,7 @@ const pages = {
   'nav': [ Pages.NavigatePage ],
   'login': [ Pages.LoginPage ], 
   'registration': [ Pages.RegistrationPage ], 
+  'userPage' : [Pages.UserPage],
   '404Page' : [ Pages.ClientErrorPage ],
   '500Page' : [ Pages.ServerErrorPage ]
 };

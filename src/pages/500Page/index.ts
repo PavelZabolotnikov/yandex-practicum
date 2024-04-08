@@ -1,1 +1,0 @@
-export { default as ServerErrorPage } from './500ErrorPage.hbs?raw';
