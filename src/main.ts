@@ -8,6 +8,7 @@ const pages = {
   'login': [ Pages.LoginPage ], 
   'registration': [ Pages.RegistrationPage ], 
   'userPage' : [Pages.UserPage],
+  'userInfoChangePage' : [Pages.UserInfoChangePage],
   '404Page' : [ Pages.ClientErrorPage ],
   '500Page' : [ Pages.ServerErrorPage ]
 };

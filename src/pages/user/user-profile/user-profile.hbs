@@ -1,24 +1,23 @@
 <section class="user_page">
- {{#with (user)}}
- <div class="user_photo">
- {{> UserPhoto src=photo alt = "Моё Фото"}}
- <button class="photo_change">Изменить фото</button>
- </div>
- <h2>{{first_name}}</h2>
- {{/with}}
-  {{#with (user)}}
- <ol class="user_info">
-    {{>UserInput inputname='Почта' type='text' value=email disabled='true'}}
-    {{>UserInput inputname='Логин' type='text' value=login disabled='true'}}
-    {{>UserInput inputname='Имя' type='text' value=login disabled='true'}}
-    {{>UserInput inputname='Фамилия' type='text' value=second_name disabled='true'}}
-    {{>UserInput inputname='Имя в чате' type='text' value=chat_name disabled='true'}}
-    {{>UserInput inputname='Телефон' type='text' value=phone_number disabled='true'}}   
- </ol>
- {{/with}}
- <div class="buttons">
-    {{> Link page="changeInfo" text='Изменить данные'}}
-    {{> Link page="changePassword" text='Изменить пароль'}}
-    {{> Link page="login" text='Выйти'}}
+    {{#with (userInfo)}}
+    <div class="user_photo">
+        <button class="photo_change">Изменить фото</button>
+    </div>
+    <h2>{{first_name}}</h2>
+    {{/with}}
+    {{#with (userInfo)}}
+    <ul class="user_info">
+        {{> UserInput inputName='Почта' type='text' value=email disabled='true'}}
+        {{> UserInput inputName='Логин' type='text' value=login disabled='true'}}
+        {{> UserInput inputName='Имя' type='text' value=first_name disabled='true'}}
+        {{> UserInput inputName='Фамилия' type='text' value=second_name disabled='true'}}
+        {{> UserInput inputName='Имя в чате' type='text' value=chat_name disabled='true'}}
+        {{> UserInput inputName='Телефон' type='text' value=phone_number disabled='true'}}
+    </ul>
+{{/with}}
+    <div class="buttons">
+        <ol><a href="UserInfoChangePage" page="UserInfoChangePage">Изменить данные</a></ol>
+        <ol><a href="nav" page="nav">Изменить пароль</a></ol>
+        <ol><a href="nav" page="nav">Выйти</a></ol>
     </div>
 </section>
