@@ -1,5 +1,6 @@
 export { UserPage } from './user-profile'
 export { UserInfoChangePage } from './user-info-change'
+export { UserPasswordChangePage } from './user-password-change'
 import Handlebars from 'handlebars';
 Handlebars.registerHelper('userInfo', () => ({
     email: 'yandex@yandex.ru',

@@ -9,6 +9,7 @@ const pages = {
   'registration': [ Pages.RegistrationPage ], 
   'userPage' : [Pages.UserPage],
   'userInfoChangePage' : [Pages.UserInfoChangePage],
+  'userPasswordChangePage' : [Pages.UserPasswordChangePage],
   '404Page' : [ Pages.ClientErrorPage ],
   '500Page' : [ Pages.ServerErrorPage ]
 };
