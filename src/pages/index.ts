@@ -1,6 +1,7 @@
 export { NavigatePage } from './navigate';
 export { LoginPage } from './login';
 export { RegistrationPage } from './registration';
+export { ChatPage } from './chat';
 export { UserPage } from './user';
 export { UserInfoChangePage } from './user'
 export { UserPasswordChangePage } from './user'

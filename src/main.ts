@@ -10,6 +10,7 @@ const pages = {
   'userPage' : [Pages.UserPage],
   'userInfoChangePage' : [Pages.UserInfoChangePage],
   'userPasswordChangePage' : [Pages.UserPasswordChangePage],
+  'chatPage' : [Pages.ChatPage],
   '404Page' : [ Pages.ClientErrorPage ],
   '500Page' : [ Pages.ServerErrorPage ]
 };

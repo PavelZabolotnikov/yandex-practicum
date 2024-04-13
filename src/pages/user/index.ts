@@ -7,6 +7,6 @@ Handlebars.registerHelper('userInfo', () => ({
     login: 'SailorMan',
     second_name: 'Бортников',
     first_name: 'Александр',
-    chat_name: 'Sailorman',
+    chat_name: 'BigMan',
     phone_number: '8-495-224-22-22',
   }));
