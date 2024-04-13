@@ -1,6 +1,7 @@
 import Handlebars from 'handlebars';
 import * as Components from './components';
 import * as Pages from './pages';
+import resolvePath from './utils/index';
 
 
 const pages = {
@@ -24,6 +25,11 @@ function navigate(page: string) {
   const [ source, context ] = pages[page];
   const container = document.getElementById('app')!;
   container.innerHTML = Handlebars.compile(source)(context);
+  updateURL(page);
+}
+
+function updateURL(page: string) {
+  history.pushState({ page }, '', `${page}`);
 }
 
 document.addEventListener('DOMContentLoaded', () => navigate('nav'));
@@ -36,5 +42,13 @@ document.addEventListener('click', e => {
 
     e.preventDefault();
     e.stopImmediatePropagation();
+  }
+});
+
+Handlebars.registerHelper('resolve', resolvePath);
+window.addEventListener('popstate', (event) => {
+  const page = event.state.page;
+  if (page) {
+    navigate(page);
   }
 });
