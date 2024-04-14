@@ -23,8 +23,8 @@ Object.entries(Components).forEach(([ name, component ]) => {
 function navigate(page: string) {
   //@ts-ignore
   const [ source, context ] = pages[page];
-  const container = document.getElementById('app')!;
-  container.innerHTML = Handlebars.compile(source)(context);
+  const handlebarsFunct = Handlebars.compile(source);
+  document.querySelector('main')!.innerHTML = handlebarsFunct(source);
   updateURL(page);
 }
 
@@ -46,6 +46,7 @@ document.addEventListener('click', e => {
 });
 
 Handlebars.registerHelper('resolve', resolvePath);
+
 window.addEventListener('popstate', (event) => {
   const page = event.state.page;
   if (page) {

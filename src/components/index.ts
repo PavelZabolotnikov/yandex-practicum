@@ -4,3 +4,4 @@ export { UserInput } from './user-input';
 export { ConversationList } from './conversation-list';
 export { ConversationItem} from './conversation-item';
 export { Init } from './init';
+export { PagesTitle } from './title'

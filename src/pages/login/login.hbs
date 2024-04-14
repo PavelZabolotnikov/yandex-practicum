@@ -1,7 +1,13 @@
 {{#> Init }}
-    <Form class="login-form">
+ <form class="login-page">
+    <div class="login-page-form">
+        {{> PagesTitle title="Вход" }}
         {{> Input label="Логин" }}
         {{> Input label="Пароль" }}
-        {{> Button label="Авторизоваться" type="link" }}
-    </Form>
+    </div>
+    <div class="login-page-buttom">
+        {{> Button label="Авторизоваться" page="chatPage" className="init_button"}}
+        {{> Button label="Нет аккаунта?" page="registration" className="no_acc_button"}}
+    </div>
+  </form>
 {{/ Init }}
