@@ -5,7 +5,7 @@ import resolvePath from './utils/index';
 
 
 const pages = {
-  'nav': [ Pages.NavigatePage ],
+  '/': [ Pages.NavigatePage ],
   'login': [ Pages.LoginPage ], 
   'registration': [ Pages.RegistrationPage ], 
   'userPage' : [Pages.UserPage],
@@ -32,7 +32,7 @@ function updateURL(page: string) {
   history.pushState({ page }, '', `${page}`);
 }
 
-document.addEventListener('DOMContentLoaded', () => navigate('nav'));
+document.addEventListener('DOMContentLoaded', () => navigate('/'));
 
 document.addEventListener('click', e => {
   //@ts-ignore

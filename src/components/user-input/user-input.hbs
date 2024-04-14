@@ -1,4 +1,4 @@
-<li >
-<p >{{inputName}}</p>
-<input type="{{type}}" value="{{value}}" name="{{name}}" {{#if disabled}}disabled{{/if}} autocomplete="off">
-</li>
+<div class="{{#if className}} {{ className }}{{/if}}">
+  <div class="user-input__title">{{ title }}</div>
+  {{> Input className="user-input__element" type=type title=title label=label }}
+</div>

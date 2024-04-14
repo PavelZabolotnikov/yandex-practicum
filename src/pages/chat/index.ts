@@ -8,7 +8,7 @@ export { default as ChatPage } from './chat-page.hbs?raw';
 
 Handlebars.registerHelper('conversation-list', () => {
     return [
-      { name: 'Максимка', message: 'Меня до сих пор не разкрыли', unread: '2', photo: ilon },
+      { name: 'Максимка', message: 'Меня до сих пор не раcкрыли', unread: '2', photo: ilon },
       { name: 'Энакин', message: 'На дальних рубежах всё спокойно', photo: veider },
       { name: 'Сашка', message: 'А можно мне в Рокки сыграть?', unread: '4', photo: petrov },
     ];
