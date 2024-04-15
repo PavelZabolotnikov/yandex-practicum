@@ -1,6 +1,7 @@
 <section class="user_page">
     {{#with (userInfo)}}
     <div class="user_photo">
+        {{> UserPhoto src=photo alt="Моё фото"}}
         <button class="photo_change">Изменить фото</button>
     </div>
     <h2>{{first_name}}</h2>
